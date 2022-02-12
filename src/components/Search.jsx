@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
+import Logo from '../images/logo.png'
 
 
 
@@ -13,46 +14,32 @@ function Search(props) {
 
     const typingTicker = (e) => {
         // e.preventdefault()
-        console.log('typing ticker...........')
-        console.log(e.target.value)
-        // handleFetch(e.target.value)
-        // setTicker(e.target.value)
-        setTicker(e.target.value)
+        // console.log(e.target.value)
+        // console.log(ticker)
+        setTicker(e.target.value.toUpperCase())   
         if (e.target.value !==("")) {
             handleFetch(e.target.value)    
+        }else {
+            setResults([])
         } 
-        // else {
-            // results=[]
-            // setResults([])
-            // setTicker=("")
-        // }    
     }
-    console.log(ticker)
+    // console.log(ticker)
+
     const clickSearch = (e) => {
         e.preventDefault()
-        console.log('You just clicked search-button!')
-        console.log(ticker)
-        handleFetch(ticker)
+        // console.log('You just clicked search-button!')
+        // console.log(ticker)
+        // handleFetch(ticker)
     }
 
-    // useEffect(()=>{
-    //     console.log("useEffect is running")
-    //     handleFetch()
-    // }, [])
-    console.log(results)
-    // console.log("my ticker is ", ticker)
-    // if (ticker === "") {
-    //     results === ([])
-    // }
-    const forceDefault=() => {
-        if (ticker === '') {
-            setResults([])
-        }
-    }
-    // forceDefault()
+    // console.log(results)
+
     return (
         <div className='search-bar'>
-            <h2>Searching___  {ticker}....</h2>
+            <div className='logo0'>
+                <img className='logo1' src={Logo} height={300} width={300}/>
+            </div>
+            <h2 className='searching'>Searching___  {ticker}....</h2>
             <form className='form' onSubmit={clickSearch}>
                 <div className='big-box'>
                     <div className='search-dropdown'>
@@ -65,26 +52,23 @@ function Search(props) {
                         <ul className='list-group'>
                             {results.slice(0,10).map((oneItem, index) => {
                                 return (
-                                    
-                                    <Link to={'/details'} key={index}>
+                                    <Link to={`/details/${oneItem.symbol}`} key={index}>
                                     <button
                                         type='button'
                                         key={index}
                                         className='list-group-item list-group-item-action'>
-                                            Symbol: {oneItem.symbol} | Company: {oneItem.description} 
+                                            Symbol: {oneItem.symbol} | Description: {oneItem.description} 
                                     </button>
                                     </Link>
                                 );
-                            })}
-                            
+                            })} 
                         </ul>
                     </div>
                     <div>
-                        <button className='search-button' type='submit'>Search</button>
+                        <Link to={`/details/${ticker}`} style={{ textDecoration: 'none' }}><button className='button-30' type='submit'>Search</button></Link>
                     </div>
                </div>
             </form>
-
         </div>
     )
 }
