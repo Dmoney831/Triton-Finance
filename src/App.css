@@ -41,18 +41,7 @@
   color:aliceblue;
   border-radius: 4px;
 }
-.details-master{
-  justify-content: center;
-  text-align: center;
-}
-.details0{
-  margin-top: 5%;
-}
-.details1{
-  border: 2px solid black;
-  /* display: flex; */
-  /* min-width: 600px; */
-}
+
 .footer {
   /* border: 2px solid black; */
   position:absolute;
@@ -64,6 +53,8 @@
   color: rgb(82, 109, 195);
   font-weight: bold;
   text-align: center;
+  display: flex;
+  justify-content: center;
   /* align-items: flex-end; */
 }
 .copyright{
@@ -78,4 +69,11 @@
 }
 .searching{
   color: rgb(82, 109, 195);
+}
+.icons{
+  margin-left: 3%;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  /* border: 2px solid black; */
 }

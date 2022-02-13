@@ -43,12 +43,10 @@ function App() {
       </Routes>
       <div className='footer'>
         <h3 className='copyright'>COPYRIGHT © Dmoney831 | DESIGNED BY Dmoney831</h3>
-            {/* <a target="_blank" href="https://www.linkedin.com/in/workwith-derek/">
-                    <i class="fa fa-linkedin-square" style="font-size:40px;color: white"></i>
-            </a>
-            <a target="_blank" href="https://github.com/Dmoney831">
-                    <i class="fa fa-github" style="font-size:40px;color: white"></i>
-            </a> */}
+        <div className='icons'>
+          <a target="_blank" href="https://github.com/Dmoney831"><img src='https://img.icons8.com/carbon-copy/60/000000/github.png'/></a>
+          <a target="_blank" href="https://www.linkedin.com/in/workwith-derek/"><img src="https://img.icons8.com/ios/55/000000/linkedin.png"/></a>
+        </div>
       </div>
     </div>
   );
@@ -56,5 +54,5 @@ function App() {
 
 export default App;
 
-
+{/* <img className='logo1' src={Logo} height={300} width={300}/> */}
 // return <div style={{ color: 'blue', lineHeight : 10, padding: 20 }}> Inline Styled Component</div>

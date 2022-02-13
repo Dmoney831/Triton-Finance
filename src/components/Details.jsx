@@ -1,7 +1,9 @@
 import '../App.css';
+import '../Details.css';
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Charts from './Charts';
 
 function Details(props) {
     const [info, setInfo] = useState()
@@ -60,6 +62,10 @@ function Details(props) {
                 <h3>Low Price of the Day: ${info.l}</h3>
                 <h3>Open Price of the Day: ${info.o}</h3>
                 <h3>Previous Close Price: ${info.pc}</h3>
+                <div className='chart'>
+                <Charts symbol={symbol} /> 
+                </div>
+                {/* <Charts symbol={symbol} /> */}
             </div>
         </div>
        
