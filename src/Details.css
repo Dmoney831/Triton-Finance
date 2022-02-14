@@ -2,7 +2,7 @@
 
 .details-master{
     justify-content: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: rgb(239,239,239);
 
     /* text-align: center; */
@@ -13,8 +13,65 @@
 
   }
   .details1{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: rgb(239,239,239);
-    /* display: flex; */
+    display: flex;
+    justify-content: space-between;
     /* min-width: 600px; */
+  }
+  .name{
+    font-weight: bold;
+    padding-left: 2%;
+  }
+  .current-price{
+    font-weight: bold;
+    padding-left: 2%;
+    font-size: 3vw;
+  }
+  .detail-info{
+    max-width: 36vw;
+    min-height: 21vw;
+    margin-left: 4%;
+    margin-top: 1%;
+    /* border: 2px solid gold; */
+    /* font-size: 1vw;  */
+  }
+  .detail-info p {
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;  */
+    /* text-decoration: underline; */
+  }
+  .span2{
+    /* margin-left: 30px; */
+    margin-right: 20px;
+  }
+  .div0{
+    border-bottom: 4px solid black ;
+    border-color: rgb(82, 109, 195);
+    padding-top: 2%;
+    max-height: 55px;
+  }
+  .chart{
+    margin-top: 1%;
+    /* margin-left: 1%; */
+    margin-right: 20px;
+  }
+  .overview{
+    margin-left:4%;
+    min-width: 36vw;
+    min-height: 22vw;
+  }
+.div0{
+  justify-content: space-around;
+}
+  .span2{
+
+}
+
+  .price-time{
+    display: flex;
   }

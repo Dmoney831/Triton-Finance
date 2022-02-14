@@ -3,6 +3,7 @@ import '../App.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import Logo from '../images/logo.png'
+import Mag from '../images/mag.png'
 
 
 
@@ -33,7 +34,7 @@ function Search(props) {
     }
 
     // console.log(results)
-
+    // const img="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-seo-dreamstale-lineal-dreamstale-7.png"
     return (
         <div className='search-bar'>
             <div className='logo0'>
@@ -47,7 +48,8 @@ function Search(props) {
                             className='form-control1'
                             placeholder="Please enter ticker symbol"
                             value={ticker}
-                            onChange={typingTicker}  
+                            onChange={typingTicker}
+                            style={{ backgroundImage:'url("https://img.icons8.com/external-dreamstale-lineal-dreamstale/28/000000/external-search-seo-dreamstale-lineal-dreamstale-7.png")', backgroundRepeat:'no-repeat', paddingLeft:'40px', backgroundPosition:'5px center' }}  
                         />
                         <ul className='list-group'>
                             {results.slice(0,10).map((oneItem, index) => {

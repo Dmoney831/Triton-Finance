@@ -1,10 +1,11 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom'
 import SearchContainer from './components/SearchContainer';
 import Navbar from './components/Navbar';
-import Search from './components/Search';
+// import Search from './components/Search'
 import Details from './components/Details';
+import About from './components/About';
 
 
 
@@ -14,7 +15,8 @@ function App() {
   const api_key = process.env.REACT_APP_API_KEY
     
   const handleFetch = (quote)=> {
-        const URL = `https://finnhub.io/api/v1/search?q=${quote}&token=${api_key}`
+        // const URL = `https://finnhub.io/api/v1/search?q=${quote}&token=${api_key}`
+        const URL = `https://finnhub.io/api/v1/search?q=${quote}&token=c829ddqad3i9d12parag`
         const options = {
         Header: {
             'Accept': "application/json",
@@ -39,6 +41,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<SearchContainer handleFetch={handleFetch} results={results} setResults={setResults}/>} />
+        <Route path='/about' element={<About />} />
         <Route path='/details/:symbol' element={<Details handleFetch={handleFetch} results={results}/>}/>
       </Routes>
       <div className='footer'>
@@ -54,5 +57,3 @@ function App() {
 
 export default App;
 
-{/* <img className='logo1' src={Logo} height={300} width={300}/> */}
-// return <div style={{ color: 'blue', lineHeight : 10, padding: 20 }}> Inline Styled Component</div>
