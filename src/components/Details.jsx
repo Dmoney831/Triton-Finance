@@ -7,8 +7,8 @@ import Charts from './Charts';
 import Overview from './Overview';
 import 'antd/dist/antd.css'
 import Clock from 'react-live-clock';
-import { Switch } from 'antd'
-import moment from 'moment'
+// import { Switch } from 'antd'
+// import moment from 'moment'
 
 function Details(props) {
     const [results, setResults] = useState([])

@@ -33,7 +33,7 @@ function Overview() {
     useEffect(() => {
         fetchOverview()
     }, [])
-    console.log(getInfo)
+    // console.log(getInfo)
     
     return (
         <div className='main'>
