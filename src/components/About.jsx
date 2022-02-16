@@ -28,7 +28,7 @@ function About() {
                 </div>
                 <main className='video-wrapper'>
                     <p className='ad-p'>advertisement</p>
-                    <VideoPlayer poster={poster} src={adSrc} width='720' height='420' />
+                    <VideoPlayer poster={poster} src={adSrc} width='1000' height='500' />
                 </main>
             </div>
         </div>
