@@ -1,6 +1,9 @@
 # Welcome to Triton Finance
 
+As a retail investor who has worked in banking, creating a platform for market followers was always one of my bucketlists. 
+This is a footing of financial platform version 1.0 with using two APIs.
 This project is built with React.js  [Check out my App](https://flamboyant-shaw-2995f0.netlify.app/).
+
 
 ### `Wireframe`
 <img width="1055" alt="Screen Shot 2022-02-10 at 10 58 30 AM" src="https://user-images.githubusercontent.com/95841682/154320582-dac92dd4-d9c5-45a8-a9ce-7b2757649da8.png">
@@ -13,6 +16,10 @@ This project is built with React.js  [Check out my App](https://flamboyant-shaw-
 
 ## User Story
 Users can check and earn stocks, equities, market situation through searching a ticker symbol. 
+Users are able to see suggestions in the dropdown as they typing characters in the search bar. 
+In a detail page where users can see individual stock/equity, it contains a chart, consist of prices & volume.
+User can unmark volume to see only prices graph and that will represent more dynamic graphic lines. (also zoom-in/zoom-out)
+
 
 ### Deployment
 
