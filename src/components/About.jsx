@@ -2,9 +2,11 @@ import '../About.css'
 import About1 from '../images/about2.png'
 import VideoPlayer from 'react-video-js-player'
 import Ad from '../video/advertisement.mp4'
+import Thumbnail from '../images/triton-logo2.jpg'
 
 function About() {
     const adSrc = Ad;
+    const poster = Thumbnail
 
     return (
         <div className='about1'>
@@ -26,7 +28,7 @@ function About() {
                 </div>
                 <main className='video-wrapper'>
                     <p className='ad-p'>advertisement</p>
-                    <VideoPlayer src={adSrc} width='720' height='420' />
+                    <VideoPlayer poster={poster} src={adSrc} width='720' height='420' />
                 </main>
             </div>
         </div>
