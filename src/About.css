@@ -1,9 +1,9 @@
 .about1{
     width: 100vw;
     /* height: 84.5vh;q */
-    height: 140%;
+    /* height: 140%; */
     background-color: rgb(145,173,205);
-    /* display: flex; */
+    
     justify-content: space-between;
 }
 .about10{
@@ -11,14 +11,8 @@
     height: 84.5vh;
 }
 
-.section1 {
-    /* min-width: 42vw; */
-
-}
-
 .second{
     padding-top: 3%;
-    /* padding-left: 10%; */
     text-align: center;
     font-size: 4vw;
     color:rgb(12,58,92);
@@ -46,13 +40,13 @@
 }
 
 .ad-p{
-    margin-left: 26%;
+    margin-left: 1%;
 }
 main{
     margin-top: 3%; 
     /* justify-content: center; */
     margin-bottom: 100px;
-    margin-left: 30%;
+    margin-left: 32%;
 }
 .video-wrapper{
     

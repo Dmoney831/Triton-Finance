@@ -58,29 +58,26 @@ transform: translateY(2px);
     /* background-color: rgb(239,239,239); */
 }
 .welcome{
-    /* margin-left: 15%; */
     color: rgb(82, 109, 195);
     font-weight: bold;
 }
 .home-about-login{
     display: flex;
-    /* margin-right: 12%; */
 }
 .home{
-    /* margin-right: 20%; */
+
     padding-right: 25px;
     color: rgb(82, 109, 195);
     font-weight: bold
 } 
   
 .about{
-    /* margin-right: 20%; */
+
     padding-right: 25px;
     color: rgb(82, 109, 195);
     font-weight: bold
 }
 .login{
-    /* margin-right: 8%; */
     padding-right: 30px;
     color: rgb(82, 109, 195);
     font-weight: bold

@@ -14,9 +14,7 @@ function Search(props) {
     const { results, setResults } = props
 
     const typingTicker = (e) => {
-        // e.preventdefault()
-        // console.log(e.target.value)
-        // console.log(ticker)
+
         setTicker(e.target.value.toUpperCase())   
         if (e.target.value !==("")) {
             handleFetch(e.target.value)    
@@ -24,17 +22,13 @@ function Search(props) {
             setResults([])
         } 
     }
-    // console.log(ticker)
+
 
     const clickSearch = (e) => {
         e.preventDefault()
-        // console.log('You just clicked search-button!')
-        // console.log(ticker)
-        // handleFetch(ticker)
+
     }
 
-    // console.log(results)
-    // const img="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-seo-dreamstale-lineal-dreamstale-7.png"
     return (
         <div className='search-bar'>
             <div className='logo0'>

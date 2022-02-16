@@ -16,7 +16,7 @@ function App() {
     
   const handleFetch = (quote)=> {
         // const URL = `https://finnhub.io/api/v1/search?q=${quote}&token=${api_key}`
-        const URL = `https://finnhub.io/api/v1/search?q=${quote}&token=c829ddqad3i9d12parag`
+        const URL = `https://finnhub.io/api/v1/search?q=${quote}&token=sandbox_c829ddqad3i9d12parb0`
         const options = {
         Header: {
             'Accept': "application/json",

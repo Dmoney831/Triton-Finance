@@ -26,7 +26,6 @@ function Details(props) {
     }
     useEffect(() => {
         const fetchingDetails = async () => {
-            // console.log("fetching details.....")
             try {
                 await fetch(URL, options)
                     .then((res) => res.json())

@@ -2,7 +2,7 @@ import React from 'react'
 import Plot from 'react-plotly.js'
 import {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom';
-import '../Charts.css'
+
 
 function Charts(props) {
     const [xValue, setXValue] = useState()
@@ -43,9 +43,7 @@ function Charts(props) {
     useEffect(()=>{
         fetchStock()
     }, [])
-    // console.log(xValue)
-    // console.log(yValue)
-    // console.log(volume)
+   
     return (
         <div>
             <Plot className='chart-size'
