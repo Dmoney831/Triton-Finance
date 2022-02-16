@@ -19,6 +19,6 @@ Users can check and earn stocks, equities, market situation through searching a 
 This application used Netlify.com to make a deployment [Check out my App](https://flamboyant-shaw-2995f0.netlify.app/).
 
 ### `Stretch Goals` 
-Login and Wathlist pages and their back-end server.js are under service now. 
+Login and Wathlist pages and supporting back-end server.js are under service now. 
 Thanks for your patience and we will try best to provide err0r(bug)-free server. 
 
